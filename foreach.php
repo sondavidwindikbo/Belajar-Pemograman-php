@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 //FOREACH
 //Foreach digunakan untuk mengulang perintah / blok kode 
@@ -13,11 +13,11 @@
 
 
 
-$warna = ['merah','biru','hijau','kuning','biru','hijau','kuning','merah','merah','merah'];
+$warna = ['merah', 'biru', 'hijau', 'kuning', 'biru', 'hijau', 'kuning', 'merah', 'merah', 'merah'];
 $jumlah = 0;
 
 //cth 1
-foreach($warna as $key => $value){
+foreach ($warna as $key => $value) {
     echo "indeks $key dengan isi $value <br>";
 }
 
@@ -25,8 +25,8 @@ echo "<br>";
 
 //cth 2
 
-foreach($warna as $nomor => $nilai){
-    if($nilai == 'merah'){
+foreach ($warna as $nomor => $nilai) {
+    if ($nilai == 'merah') {
         $jumlah++;
     }
 }
@@ -59,13 +59,36 @@ $nama = [
 //     }
 // }
 
-foreach ($nama as $key => $value){
+foreach ($nama as $key => $value) {
     echo "Nama $value <br>";
 
-    if($value == 'Fajar'){
+    if ($value == 'Fajar') {
         echo "index ke $key <br>";
         break;
     }
 }
 
-?>
+echo "<br>";
+echo "<br>";
+
+
+//CONTINUE DI FOREACH
+
+$siswa = [
+    ['nama' => 'toni', 'kelas' => '2A'],
+    ['nama' => 'andi', 'kelas' => '2B'],
+    ['nama' => 'budi', 'kelas' => '2C'],
+    ['nama' => 'citra', 'kelas' => '2A'],
+    ['nama' => 'dewi', 'kelas' => '2B'],
+    ['nama' => 'eko', 'kelas' => '2C'],
+];
+
+foreach ($siswa as $key => $value) {
+
+    if ($value['kelas'] == '2A') {
+        continue;
+
+        echo "Nama :" . $value['nama'] . "<br>";
+        echo "Kelas : " . $value['kelas'] . "<br><br>";
+    }
+}

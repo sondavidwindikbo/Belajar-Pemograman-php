@@ -5,7 +5,55 @@
 //strtoupper fungsi membua huruf kapiatl per kata
 
 $nama = strtoupper("son david");
-phpinfo();
+
+//phpinfo();
+
+echo "<br>";
+echo "<br>";
+
+$kalimat = "saya suka makan nasi dan ubi karna saya orang papua , sekaran saya tinggal di kotaraja bersama dua kaka saya. saya lebih suka menghabiskan waktu di kamar bermain laptop dari pada bermain sembarangan.
+";
+
+echo "<br>";
+
+echo str_word_count($kalimat). "<br>";//funsi untuk menghitung kata
+echo str_replace('saya', 'ison', $kalimat); //fungsi untuk menganti kata 
+
+echo "<br>";
+
+
+//MEMBUAT FUNGSI SENDIRI ATAU MANUAL 
+
+function cetakPesan($nama = null) {
+    if(empty ($nama)){
+        echo "selamat Datang!";
+    }else{
+        echo "selamat Datang, $nama !";
+    }
+    
+}
+
+
+//SCOPE VARIABLE
+
+cetakPesan('batu');
+
+echo "<br>";
+echo "<br>";
+
+function greeting($name = null){
+    global $name;
+    if(empty($name)){
+        echo "good Night";
+    }else{
+        echo "good Night, $name !";
+    }
+}
+
+$name ="Jefri";
+
+greeting();
+
 
 ?>
 <!DOCTYPE html>
