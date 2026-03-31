@@ -55,6 +55,64 @@ $name ="Jefri";
 greeting();
 
 
+//RETURN IN FUNCTION
+// Maksud dari mengembalikan nilai dari fungsi, adalah mengembalikan 
+//output (hasil proses dari sebuah fungsi) agar dapat digunakan di luar fungsi.
+
+// Untuk mengembalikan nilai pada fungsi kita dapat menggunakan statemen
+// return, ketika menggunakan statmen return maka eksekusi fungsi berhenti dan nilai dikembalikan (return) ke pemanggil fungsi.
+
+echo "<br>";
+echo "<br>";
+
+$alas = 10;
+$tinggi = 5;
+
+function luasSegitiga($alas, $tinggi){
+
+    $luas = $alas *  $tinggi / 2;
+
+    return $luas;
+}
+
+$hasil = luasSegitiga($alas, $tinggi);
+
+echo $hasil;
+echo "<br>";
+
+
+function luasJajarGenjang($alas, $tinggi){
+    $luas = ($alas + $tinggi) / 2;
+
+    return $luas;
+}
+
+$luasJajarGenjang = luasJajarGenjang($alas, $tinggi);
+echo $luasJajarGenjang;
+
+
+echo "<br>";
+echo "<br>";
+
+
+
+//FUNSI PARAMETER REFENSI
+
+
+function kalilipat(&$angka){
+    $angka = $angka * 2;
+
+    return $angka;
+}
+
+$x = 9;
+
+echo kalilipat($x)."<br>";
+echo kalilipat($x)."<br>";
+echo kalilipat($x)."<br>";
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
