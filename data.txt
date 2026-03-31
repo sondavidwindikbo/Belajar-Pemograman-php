@@ -1,0 +1,1 @@
+[{"nama":"toni","kelas":"2A","golongan_darah":"A"},{"nama":"andi","kelas":"2B","golongan_darah":"B"},{"nama":"budi","kelas":"2C","golongan_darah":"O"},{"nama":"citra","kelas":"2A","golongan_darah":"AB"},{"nama":"dewi","kelas":"2B","golongan_darah":"A"},{"nama":"eko","kelas":"2C","golongan_darah":"O"}]
